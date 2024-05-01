@@ -67,7 +67,7 @@
 
         section {
             display: flex;
-            height: 100vh;
+            height: 90vh;
             width: 100%;
             color: floralwhite;
             font-size: 70px;
@@ -96,7 +96,112 @@
             text-decoration: none;
         }
 
+        .backbx {
+            background-color: darkseagreen;
+            padding: 30px 0px;
+        }
+
+        b {
+            font-size: 33px;
+        }
+
+        .box1 {
+            display: flex;
+            flex: 2;
+            align-self: right;
+            font-size: 30px;
+            margin: 70px 0px;
+            padding: 80px 110px 0px 110px;
+        }
+
+        .spbg {
+            background-image: url(Field.jpg);
+            background-repeat: no-repeat;
+        }
+
+        .boxs1 {
+            align-self: center;
+            text-align: center;
+            background-color: gold;
+            color: white;
+            font-size: 20px;
+            padding: 5px 0px 5px 0px;
+        }
+
+        .space {
+            margin: 0px 45px;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .low {
+            margin-top: 90px;
+        }
+
+        .box2s {
+            padding: 1px;
+            flex: 1;
+        }
+
+        .itemimgs {
+            width: 150px;
+        }
+
+        .linktxt {
+            text-decoration: none;
+            color: darkseagreen;
+        }
+
+        .box3s {
+            flex: 1;
+            font-size: 20px;
+            text-decoration: none;
+            color: cadetblue;
+        }
+
+        .center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .grad1 {
+            background-color: floralwhite;
+            border-right: 2px solid darkseagreen;
+        }
+
+        .grad2 {
+            background-color: beige;
+            border-right: 2px solid darkseagreen;
+            border-left: 2px solid darkseagreen;
+        }
+
+        .grad3 {
+            background-color: blanchedalmond;
+            border-left: 2px solid darkseagreen;
+        }
+
+        .title {
+            justify-content: center;
+            font-size: 50px;
+        }
+
+        .box4l {
+            flex: 1;
+            justify-content: none;
+            font-size: 30px;
+        }
+
         @media only screen and (min-width: 768px) {
+            section {
+                display: flex;
+                height: 100vh;
+                width: 100%;
+                color: floralwhite;
+                font-size: 70px;
+                text-align: center;
+            }
+
             b {
                 font-size: 45px;
             }
@@ -105,89 +210,30 @@
                 color: red;
             }
 
-            .innerspace {
-                padding: 0px 300px;
-            }
-
             .box1 {
-                flex: 2;
-                border-left: 7px solid floralwhite;
-                border-right: 7px solid floralwhite;
-                align-self: right;
                 font-size: 35px;
-                margin-top: 70px;
-                padding: 80px 110px 0px 110px;
-            }
-
-            .spbg {
-                background-image: url(Field.jpg);
-                background-repeat: no-repeat;
-            }
-
-            .backbx {
-                background-color: darkseagreen;
-
-            }
-
-            .boxs1 {
-                align-self: center;
-                text-align: center;
-                background-color: gold;
-                color: white;
-                font-size: 20px;
-                padding: 5px;
             }
 
             .space {
                 margin: 0px 115px;
-                font-size: 20px;
-                text-align: center;
             }
 
             .low {
-                margin-top: 90px;
+                margin-top: 0px;
             }
 
-            .box2s {
-                padding: 1px;
-                flex: 1;
+            .low2 {
+                padding-top: 90px;
             }
 
             .itemimgs {
                 width: 100%;
             }
 
-            .linktxt {
-                text-decoration: none;
-                color: darkseagreen;
+            .title {
+                font-size: 60px;
             }
-            
-            .box3v1 {
-                flex: 1;
-                font-size: 20px;
-                text-decoration: none;
-                color: cadetblue;
-            }
-            
-            .center {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-            }
-            
-            .grad1 {
-                background-color: floralwhite;
-                border-right: 2px solid darkseagreen;
-            }
-            .grad2 {
-                background-color: beige;
-                border-right: 2px solid darkseagreen;
-                border-left: 2px solid darkseagreen;
-            }
-            .grad3 {
-                background-color: blanchedalmond;
-                border-left: 2px solid darkseagreen;
-            }
+
         }
 
     </style>
@@ -206,16 +252,19 @@
         </div>
     </nav>
     <section id="Home" class="mainbg spbg">
-        <a class="box1"><b class="backbx"><u>Freshly Grown, Freshly Shared</u></b>
-            <br><br>
-            We value your various ffffffffffffffffffffffffffff ffffffffffffffffffffffffffffffffffff fffffffffffffffffffffffffffffffffffffff
-            <br>
-            <a class="boxs1 sec">Start through our produce selections</a>
-        </a>
+        <div class="box1">
+            <a class="backbx">
+                <b><u>Freshly Grown, Freshly Shared</u></b>
+                <br><br>
+                We value your various ffffffffffffffffffffffffffff ffffffffffffffffffffffffffffffffffff fffffffffffffffffffffffffffffffffffffff
+                <br><br><br>
+                <p class="boxs1 sec">Start through our produce selections</p>
+            </a>
+        </div>
     </section>
 
     <section id="Produce" class="flip">
-        <div class="space low">
+        <div class="space low low2">
             <a class="box2s" href=#Produce><img class="itemimgs" src="Season.jpg"></a>
             <p></p>
             <a class="linktxt" href=#Produce>Seasonal Items</a>
@@ -225,7 +274,7 @@
             <p></p>
             <a class="linktxt" href=#Produce>Organics</a>
         </div>
-        <div class="space low">
+        <div class="space low low2">
             <a class="box2s" href=#Produce><img class="itemimgs" src="Fruits.jpg"></a>
             <p></p>
             <a class="linktxt" href=#Produce>Fruits</a>
@@ -235,7 +284,7 @@
             <p></p>
             <a class="linktxt" href=#Produce>Grains</a>
         </div>
-        <div class="space low">
+        <div class="space low low2">
             <a class="box2s" href=#Produce><img class="itemimgs" src="Veggies.jpg"></a>
             <p></p>
             <a class="linktxt" href=#Produce>Vegetables</a>
@@ -249,29 +298,37 @@
 
     <section id="Deals" class="mainbg center">
         <div class="sec grad1">
-            <a class="box3v1" href=#Deals><img class="itemimgs" src="Basket%20Deal.jpg">
-            <p>Seasonal Basket<p>25% Discount</p>
-            </p>
-            $24.99
+            <a class="box3s" href=#Deals><img class="itemimgs" src="Basket%20Deal.jpg">
+                <p>Seasonal Basket <br>25% Discount</p>
+                $24.99
             </a>
         </div>
         <div class="sec grad2">
-            <a class="box3v1" href=#Deals><img class="itemimgs" src="Basket%20Deal.jpg">
-            <p>Healthy Package<p>15% Discount</p>
-            </p>
-            $42.99
+            <a class="box3s" href=#Deals><img class="itemimgs" src="Basket%20Deal%202.jpg">
+                <p>Healthy Package <br>15% Discount</p>
+                $42.99
             </a>
         </div>
         <div class="sec grad3">
-            <a class="box3v1" href=#Deals><img class="itemimgs" src="Basket%20Deal.jpg">
-            <p>Farm Bundle<p>30% Discount</p>
-            </p>
-            $54.99
+            <a class="box3s" href=#Deals><img class="itemimgs" src="Basket%20Deal%203.jpg">
+                <p>Farm Bundle <br>30% Discount</p>
+                $54.99
             </a>
         </div>
     </section>
-    <section id="Stores" class="flip">Stores Section</section>
-    <section id="About" class="mainbg">About Section</section>
+
+    <section id="Stores" class="flip title"><u>Locations</u><br>
+        <div>
+
+        </div>
+        <div>
+
+        </div>
+    </section>
+
+    <section id="About" class="mainbg">About Section
+
+    </section>
     <div class="button">
         <a href="#Home"><i class="fas fa-arrow-up"></i> Top</a>
     </div>
