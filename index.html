@@ -132,7 +132,7 @@
             font-size: 20px;
             text-align: center;
         }
-        
+
         .box2s {
             padding: 1px;
             flex: 1;
@@ -176,29 +176,40 @@
             border-left: 2px solid darkseagreen;
         }
 
+        .sectioned {
+            flex-direction: column;
+        }
+
         .title {
             justify-content: center;
             font-size: 50px;
         }
 
         .box4l {
+            display: flex;
+            flex-direction: row;
+            text-align: left;
+            color: cadetblue;
+            font-size: 25px;
+            padding-left: 50px;
+        }
+
+        .box4r {
             flex: 1;
-            justify-content: none;
-            font-size: 30px;
+            padding-left: 60px;
         }
 
         @media only screen and (min-width: 768px) {
             section {
-                display: flex;
                 height: 100vh;
-                width: 100%;
-                color: floralwhite;
-                font-size: 70px;
-                text-align: center;
             }
 
             b {
                 font-size: 45px;
+            }
+
+            .navbar .menu li a {
+                color: red;
             }
 
             .box1 {
@@ -219,6 +230,16 @@
 
             .title {
                 font-size: 60px;
+            }
+            
+            .box4l {
+                font-size: 35px;
+                padding-left: 150px;
+            }
+            
+            .box4r {
+                display: flex;
+                justify-content: center;
             }
 
         }
@@ -304,17 +325,29 @@
         </div>
     </section>
 
-    <section id="Stores" class="flip title"><u>Locations</u><br>
-        <div>
-
-        </div>
-        <div>
-
+    <section id="Stores" class="flip sectioned"><u>
+            <h4 class="title">Locations</h4>
+        </u><br>
+        <div class="box4l">
+            <ul>
+                <li>985 Stutler Ln,<br>
+                    Erie,<br>
+                    PA 16501<br>
+                    814-402-5956</li>
+                <br>
+                <li>1424 Eagle Drive,<br>
+                    Erie,<br>
+                    MI 48133<br>
+                    734-848-1449</li>
+            </ul>
+            <a class="box4r"><img src=Barn.jpg></a>
         </div>
     </section>
 
-    <section id="About" class="mainbg">About Section
-
+    <section id="About" class="mainbg">About Section<br>
+        <div class="left">
+            Hello Hello Hello HelloHello HelloHello Hello Hello
+        </div>
     </section>
     <div class="button">
         <a href="#Home"><i class="fas fa-arrow-up"></i> Top</a>
