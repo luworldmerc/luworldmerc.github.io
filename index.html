@@ -185,9 +185,12 @@
             font-size: 50px;
         }
 
-        .box4l {
+        .row {
             display: flex;
             flex-direction: row;
+        }
+
+        .box4l {
             text-align: left;
             color: cadetblue;
             font-size: 25px;
@@ -199,6 +202,18 @@
             padding-left: 60px;
         }
 
+        .desc {
+            text-align: left;
+            font-size: 17px;
+            padding-right: 120px;
+        }
+
+        .box5r {
+            justify-content: center;
+            padding-top: 80px;
+            margin-left: 40px;
+        }
+
         @media only screen and (min-width: 768px) {
             section {
                 height: 100vh;
@@ -206,10 +221,6 @@
 
             b {
                 font-size: 45px;
-            }
-
-            .navbar .menu li a {
-                color: red;
             }
 
             .box1 {
@@ -231,17 +242,26 @@
             .title {
                 font-size: 60px;
             }
-            
+
             .box4l {
                 font-size: 35px;
                 padding-left: 150px;
             }
-            
+
             .box4r {
                 display: flex;
                 justify-content: center;
             }
 
+            .desc {
+                font-size: 25px;
+                padding-right: 350px;
+            }
+            
+            .box5r {
+                padding-top: 150px;
+                margin-left: 300px;
+            }
         }
 
     </style>
@@ -328,27 +348,35 @@
     <section id="Stores" class="flip sectioned"><u>
             <h4 class="title">Locations</h4>
         </u><br>
-        <div class="box4l">
+        <div class="row box4l">
             <ul>
                 <li>985 Stutler Ln,<br>
                     Erie,<br>
                     PA 16501<br>
-                    814-402-5956</li>
+                    Ph: 814-402-5956</li>
                 <br>
                 <li>1424 Eagle Drive,<br>
                     Erie,<br>
                     MI 48133<br>
-                    734-848-1449</li>
+                    Ph: 734-848-1449</li>
             </ul>
             <a class="box4r"><img src=Barn.jpg></a>
         </div>
     </section>
 
-    <section id="About" class="mainbg">About Section<br>
-        <div class="left">
-            Hello Hello Hello HelloHello HelloHello Hello Hello
+    <section id="About" class="mainbg sectioned">
+        <b class="title"><u>About</u></b>
+        <div class="row desc sec">
+            <ul>
+                <br>
+                Greetings, my name is Lucas Lima, the creator of this site for my family business. I'm a student of Mercy University studying in the major of Cybersecurity, however I took the interest in learning about Web Design and made it to good use on supporting our products.
+                <br><br>
+                We're looking to bring back the age of neutral non-GMO produce coming from our farms to settle people with the healthiest forms of natural produce and crops in their dishes.
+            </ul>
+            <a class="box5r"><img src=Him.jpg></a>
         </div>
     </section>
+
     <div class="button">
         <a href="#Home"><i class="fas fa-arrow-up"></i> Top</a>
     </div>
